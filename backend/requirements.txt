@@ -2,3 +2,6 @@ transformers
 diffusers
 torch
 pydantic
+boto3
+modal
+requests
