@@ -12,7 +12,8 @@ export const env = createEnv({
       .enum(["development", "test", "production"])
       .default("development"),
 
-    // BETTER_AUTH_SECRET: z.string(),
+    BETTER_AUTH_SECRET: z.string(),
+    BETTER_AUTH_URL: z.string(),
     MODAL_KEY: z.string(),
     MODAL_SECRET: z.string(),
     AWS_ACCESS_KEY_ID: z.string(),
@@ -40,7 +41,8 @@ export const env = createEnv({
    * middlewares) or client-side so we need to destruct manually.
    */
   runtimeEnv: {
-    // BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
+    BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
+    BETTER_AUTH_URL: process.env.BETTER_AUTH_URL,
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
     MODAL_KEY: process.env.MODAL_KEY,
