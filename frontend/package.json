@@ -37,6 +37,7 @@
     "better-auth": "^1.3.12",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "inngest": "^3.41.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.544.0",
     "next": "^15.2.3",
