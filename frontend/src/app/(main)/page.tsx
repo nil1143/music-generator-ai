@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import CreateSong from "~/components/create";
 import { auth } from "~/lib/auth";
 
-export default async function HomePage() {
+export default async function Page() {
   const session = await auth.api.getSession({
     headers: await headers(),
   });

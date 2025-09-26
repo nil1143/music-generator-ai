@@ -158,7 +158,7 @@ export function SongPanel() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 wrap">
               <label className="text-sm font-medium">Inspiration</label>
               <div className="w-full overflow-x-auto whitespace-nowrap">
                 <div className="flex gap-2 pb-2">
