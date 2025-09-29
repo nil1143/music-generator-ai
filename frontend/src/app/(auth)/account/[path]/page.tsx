@@ -13,9 +13,9 @@ export function generateStaticParams() {
 export default async function AccountPage({
   params,
 }: {
-  params: { path: string }
+  params: Promise<{ path: string }>
 }) {
-  const { path } = params
+  const { path } = await params
 
   return (
     <main className="container p-4 md:p-6">
