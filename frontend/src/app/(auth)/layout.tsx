@@ -21,7 +21,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geist.variable}`}>
-      <body className="flex min-h-svh flex-col">
+      <body className="flex min-h-svh flex-col items-center justify-center">
         <Providers>
           {children}
           <Toaster />

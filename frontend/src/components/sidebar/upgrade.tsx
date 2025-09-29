@@ -1,17 +1,17 @@
 "use client";
 
-// import { authClient } from "~/lib/auth-client";
+import { authClient } from "~/lib/auth.client";
 import { Button } from "../ui/button";
 
 export default function Upgrade() {
   const upgrade = async () => {
-    // await authClient.checkout({
-    //   products: [
-    //     "a209b547-608c-44e7-9178-4976a73c7135",
-    //     "11bce5cb-bfda-4c8f-afcc-4a512e2d7361",
-    //     "7ddf3794-111c-45ba-bd4c-36935d8ed81b",
-    //   ],
-    // });
+    await authClient.checkout({
+      products: [
+        "56866f71-aafc-4217-bafd-c52326276291",
+        "96a14134-1841-4dd1-a8e8-15ecf0a763d8",
+        "3212d404-b6f8-44b3-a891-0fa5b87e5768",
+      ],
+    });
   };
   return (
     <Button
